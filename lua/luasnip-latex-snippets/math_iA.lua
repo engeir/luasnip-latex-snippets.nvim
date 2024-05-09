@@ -62,7 +62,7 @@ function M.retrieve(is_math)
         priority = 100,
       },
       f(function(_, snip)
-        return string.format("\\hat{%s}", snip.captures[1])
+        return string.format("\\widehat{%s}", snip.captures[1])
       end, {})
     ),
     s(
